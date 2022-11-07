@@ -13,6 +13,7 @@ function App() {
             <div className="item">/</div>
             <div className="item">*</div>
             <div className="item">C</div>
+            <div className="item">=</div>
           </div>
           <div className="numbers">
             {numbers.map((item) => (

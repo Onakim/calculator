@@ -60,3 +60,10 @@ h1 {
 .numbers > .item:hover {
   background-color: #929ba1;
 }
+.buttons > .item.item-result{
+  background-color: #9fc1a2;
+}
+.buttons > .item.item-result:hover{
+  background-color: #8fad91;
+}
+

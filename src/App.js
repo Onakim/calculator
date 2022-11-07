@@ -13,7 +13,7 @@ function App() {
             <div className="item">/</div>
             <div className="item">*</div>
             <div className="item">C</div>
-            <div className="item">=</div>
+            <div className="item item-result">=</div>
           </div>
           <div className="numbers">
             {numbers.map((item) => (

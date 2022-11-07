@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="container">
+        <h1>Calculator</h1>
+        <div className="app__inner">
+          <p className="result">0</p>
+          <div className="buttons">
+            <div className="item">+</div>
+            <div className="item">-</div>
+            <div className="item">/</div>
+            <div className="item">*</div>
+            <div className="item">C</div>
+          </div>
+          <div className="numbers">
+            {numbers.map((item) => (
+              <div key={`item-${item + 1}`} className="item">
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

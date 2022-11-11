@@ -20,7 +20,7 @@ function App() {
           </div>
           <div className="numbers">
             {numbers.map((item) => (
-              <div key={`item-${item + 1}`} className="item" onClick={()=>dispatch({type: "NUMB", payload: item})}>
+              <div key={`item-${item + 1}`} className="item" onClick={() => dispatch({ type: "NUMB", payload: item })}>
                 {item}
               </div>
             ))}

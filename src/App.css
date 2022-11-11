@@ -30,7 +30,7 @@ h1 {
 }
 .buttons {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 10px;
 }
 .buttons > .item {
@@ -65,5 +65,12 @@ h1 {
 }
 .buttons > .item.item-result:hover{
   background-color: #8fad91;
+}
+
+.buttons >.item.item-back{
+  background-color: #f672c6;
+}
+.buttons >.item.item-back:hover{
+  background-color: #f665c1;
 }
 

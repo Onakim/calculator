@@ -5,6 +5,9 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
 import "./index.css";
 import App from "./App";
+const defaultState = {
+
+}
 const actions = [
   {
     type: "CANCEL",
@@ -20,12 +23,12 @@ const actions = [
   },
 ];
 
-const reducer = (action, payload) => {
+const reducer = (state = defaultState, action) => {
   switch (action) {
     case "NUMB":
-      return console.log(payload);
+      return console.log(action.payload);
     default:
-      
+
   }
 }
 

@@ -20,8 +20,13 @@ const actions = [
   },
 ];
 
-const reducer = () => {
-  
+const reducer = (action, payload) => {
+  switch (action) {
+    case "NUMB":
+      return console.log(payload);
+    default:
+      
+  }
 }
 
 export const store = createStore(reducer, composeWithDevTools());

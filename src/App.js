@@ -1,6 +1,8 @@
+import { useDispatch } from "react-redux";
 import "./App.css";
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 function App() {
+  const dispatch = useDispatch();
   return (
     <div className="app">
       <div className="container">
@@ -17,7 +19,7 @@ function App() {
           </div>
           <div className="numbers">
             {numbers.map((item) => (
-              <div key={`item-${item + 1}`} className="item">
+              <div key={`item-${item + 1}`} className="item" onClick={()=>dispatch({type: "NUMB", payload: item})}>
                 {item}
               </div>
             ))}

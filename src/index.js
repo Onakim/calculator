@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import "./index.css";
 import App from "./App";
 const defaultState = {
-
+  value: 0
 }
 const actions = [
   {
@@ -24,9 +24,9 @@ const actions = [
 ];
 
 const reducer = (state = defaultState, action) => {
-  switch (action) {
+  switch (action.type) {
     case "NUMB":
-      return console.log(action.payload);
+      return action.payload;
     default:
 
   }

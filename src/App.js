@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import * as bootstrap from 'bootstrap';
 import "./App.css";
 const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."];
 function App() {
@@ -18,7 +19,7 @@ function App() {
             <div className="item" onClick={()=>dispatch({type: "FUNC", payload: "PERCENT"})}>%</div>
             <div className="item" onClick={()=>dispatch({type: "FUNC", payload: "ROOT"})}>&#8730;</div>
             <div className="item" onClick={()=>dispatch({type: "CANCEL"})}>C</div>
-            <div className="item" onClick={()=>dispatch({type: "BACK"})}>back</div>
+            <div className="item fw-bold fs-2" onClick={()=>dispatch({type: "BACK"})}>&#8592;</div>
             <div className="item item-result" onClick={()=>dispatch({type: "RESULT"})}>=</div>
           </div>
           <div className="numbers">
